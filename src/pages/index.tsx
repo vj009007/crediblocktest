@@ -173,7 +173,7 @@ export default function Home() {
               <Typography className="text-md leading-6 font-normal lg:pt-10 pt-6 text-white text-opacity-60">
                 A trustworthy investment offer
               </Typography>
-              <Link href="#" className="btn-style lg:mt-11 mt-8">
+              <Link href="#" className="btn-style">
                 Book a demo
               </Link>
               <Box className={myFont.className}>
@@ -280,7 +280,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="bg-black lg:py-20 py-6 bgfaded relative overflow-hidden">
+      <section className="bg-black lg:py-20 py-6 bgfaded relative overflow-hidden community-section">
         <div className="container">
           <Typography
             variant="h2"
@@ -288,7 +288,7 @@ export default function Home() {
           >
             <span className="no-gradient"> Get bot score for your user via</span> our API 
           </Typography>
-          <Typography className="text-base leading-6 font-normal text-white text-opacity-70 text-center mt-6">
+          <Typography className="text-base leading-6 font-normal text-white text-opacity-70 text-center pt-6">
             The complete web3 security service
           </Typography>
           <div className="flex mt-11 items-start lg:gap-[70px] gap-10 mx-auto lg:max-w-[90%] lg:flex-nowrap flex-wrap lg:text-left text-center">
@@ -300,11 +300,11 @@ export default function Home() {
               />
               <Typography
                 variant="h5"
-                className="text-white text-center md:text-[28px] text-xl left-7 font-semibold"
+                className="text-white "
               >
                 Community security system
               </Typography>
-              <Typography className="mt-5 md:text-base text-sm text-white md:max-w-[375px] mx-auto font-normal text-opacity-70 text-center">
+              <Typography className="pt-5 community-text">
                 Our bot provides a firewall for discord and telegram communities
                 to grow safely
               </Typography>
@@ -317,11 +317,11 @@ export default function Home() {
               />
               <Typography
                 variant="h5"
-                className="text-white text-center md:text-[28px] text-xl left-7 font-semibold"
+                className="text-white"
               >
                 Project certification & insurance
               </Typography>
-              <Typography className="mt-5 md:text-base text-sm text-white md:max-w-[375px] mx-auto font-normal text-opacity-70 text-center">
+              <Typography className="pt-5 community-text">
                 Build trust for your project with web3 security assurances that
                 lead to more sales and users
               </Typography>

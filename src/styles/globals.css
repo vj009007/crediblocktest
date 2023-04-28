@@ -112,19 +112,22 @@
     @apply lg:text-[140px] lg:leading-[120px] md:text-[120px] text-[86px] leading-none text-white text-opacity-[.06] font-medium mt-4 !important;
   }
   .btn-style-2 {
-    font-family: "Montserrat";
-    border: solid 2px #000;
+    font-family: "Montserrat" !important;
+    border: solid 2px #000 !important;
     background: linear-gradient(
         220.3deg,
         #7b4a4a -11.15%,
         rgba(26, 26, 28, 0.05) -11.15%,
         rgba(244, 244, 255, 0.16) 94.8%
       ),
-      #1a1a1c;
+      #1a1a1c ;
     @apply rounded-full px-5 py-3 tracking-[-0.04em] text-center no-underline  text-white text-xl leading-8 font-semibold !important;
   }
   .banner h1 {
     @apply lg:text-[68px] text-[48px] leading-none font-bold text-white !important;
+  }
+  .banner a.btn-style{
+    @apply lg:mt-11 mt-8 !important;
   }
   .tech-section ul div {
     @apply m-0 text-white opacity-70 tracking-[-0.04em] text-base leading-8 font-medium mb-2 !important;
@@ -203,6 +206,12 @@
     .community {
       background-size: cover;
     }
+  }
+  .community-section h5{
+    @apply text-center md:text-[28px] text-xl left-7 font-semibold !important;
+  }
+  .community-section .community-text{
+    @apply md:text-base text-sm text-white md:max-w-[375px] mx-auto font-normal text-opacity-70 text-center !important;
   }
   .footer-border {
     border-image-slice: 1;
@@ -320,7 +329,7 @@
       gap: 30px;
     }
     .btn-style-2 {
-      @apply px-4 text-lg font-medium;
+      @apply px-4 text-lg font-medium !important;
     }
     .testimonial-slider .slick-arrow {
       @apply w-[40px] h-[40px];
