@@ -21,7 +21,6 @@ import rss from "../../public/RSS_black.svg";
 import roobinium from "../../public/roobinium.svg";
 import React, { useState } from "react";
 import localFont from '@next/font/local';
-import { Poppins } from '@next/font/google';
 import {
   SelectChangeEvent,
   FormControl,
@@ -35,21 +34,9 @@ import {
 } from "@mui/material";
 import Slider from "react-slick";
 
-
-const myFont = localFont({
-  src: '../fonts/Druk-Wide-Bold.ttf',
-  variable: '--myFont',
-})
-const poppins = Poppins({
-  weight: ['400', '700' , '500' , '600', '800'],
-  style: ['normal'],
-  subsets: ['latin'],
-  variable: '--poppins',
-})
+const myFont = localFont({ src: '../fonts/Druk-Wide-Bold.woff' })
 
 export default function Home() {
-  
-
   const [isActive, setIsActive] = useState(false);
   const handleClick = (event: any) => {
     // 👇️ toggle isActive state on click
@@ -101,7 +88,7 @@ export default function Home() {
   };
 
   return (
-    <main className={poppins.className}>
+    <main className="">
       <Head>
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -181,7 +168,7 @@ export default function Home() {
             <Box className="lg:max-w-[440px] w-full lg:text-left text-center lg:pt-20">
               <Typography
                 variant="h1"
-                className={`lg:text-[68px] text-[48px] leading-none font-bold text-white ${poppins.className}`}
+                className="lg:text-[68px] text-[48px] leading-none font-bold text-white"
               >
                 AI-powered detection of unwanted bots in web3
               </Typography>
@@ -191,7 +178,9 @@ export default function Home() {
               <Link href="#" className="btn-style lg:mt-11 mt-8">
                 Book a demo
               </Link>
-                <Typography className={`web3 ${myFont}`}>web3</Typography>
+              <Box className={myFont.className}>
+                <Typography className="web3">web3</Typography>
+              </Box>
             </Box>
             <Box className="w-full">
               <Image
