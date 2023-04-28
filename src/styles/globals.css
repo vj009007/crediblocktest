@@ -142,7 +142,7 @@
   .wrapper-logo .slick-slider .slick-slide:before,
   .gradeint-border:before {
     content: "";
-    @apply block absolute left-[1px] right-[1px] top-[1px] bottom-[1px] z-0 rounded-[24px] bg-black !important;
+    @apply block absolute left-[1px] right-[1px] top-[1px] bottom-[1px] z-0 rounded-[24px] bg-black;
     transition: all 0.3s ease;
   }
   .wrapper-logo .slick-slider .slick-arrow {
