@@ -92,7 +92,7 @@ export default function Home() {
       <Head>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <header className="bg-black py-[14px] relative">
+      <header>
         <button className={isActive ? "toggleMenu" : ""}></button>
         <Box className="container mx-auto">
           <Box className="flex items-center justify-between">
@@ -195,7 +195,7 @@ export default function Home() {
         <div className="container">
           <Typography
             variant="h2"
-            className="text-center max-w-[700px] mx-auto md:text-[40px] text-3xl md:leading-[48px] text-white tracking-[-0.04em] font-bold text-green-gradient"
+            className="max-w-[700px]"
           >
             <span className="no-gradient">Web 3 (on-chain) and web 2 (off- chain) analyzed our </span>
              Al technology
@@ -244,7 +244,7 @@ export default function Home() {
         <div className="container">
           <Typography
             variant="h2"
-            className="text-center max-w-[790px] mx-auto md:text-[40px] text-3xl leading-none text-white tracking-[-0.04em] font-bold"
+            className="max-w-[790px]"
           >
             Media
           </Typography>
@@ -284,7 +284,7 @@ export default function Home() {
         <div className="container">
           <Typography
             variant="h2"
-            className="text-center max-w-[420px] mx-auto md:text-[40px] text-3xl md:leading-[48px] text-white tracking-[-0.04em] font-bold text-green-gradient"
+            className="max-w-[420px]"
           >
             <span className="no-gradient"> Get bot score for your user via</span> our API 
           </Typography>
@@ -334,7 +334,7 @@ export default function Home() {
         <Box className="container max-w-[832px]">
           <Typography
             variant="h2"
-            className="text-center  mx-auto md:text-[40px] text-3xl md:leading-[48px] text-white tracking-[-0.04em] font-bold"
+            className=""
           >
             Our <span className="text-green-gradient"> costumers <span className="no-gradient">and</span> partners </span>
           </Typography>
@@ -399,7 +399,7 @@ export default function Home() {
         <Box className="container text-center">
           <Typography
             variant="h2"
-            className="text-center max-w-[580px] mx-auto lg:text-[40px] md:text-[40px] text-3xl md:leading-snug md:leading-[48px] text-white tracking-[-0.04em] font-bold lg:pt-[160px] pt-10"
+            className="lg:pt-[160px] pt-10"
           >
             Equip yourself with Crediblocks and grow your community
           </Typography>
