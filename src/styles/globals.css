@@ -54,7 +54,7 @@
     @apply text-green-gradient font-medium !important;
   }
   h2{
-    @apply text-center mx-auto md:text-[40px] text-3xl md:leading-[48px] text-white tracking-[-0.04em] font-bold text-green-gradient !important;
+    @apply text-center mx-auto md:text-[40px] text-3xl md:leading-[48px] text-white tracking-[-0.04em] font-bold !important;
   }
   header .country-dropdown div {
     @apply relative z-[1] !important;

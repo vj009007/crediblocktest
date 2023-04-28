@@ -195,7 +195,7 @@ export default function Home() {
         <div className="container">
           <Typography
             variant="h2"
-            className="max-w-[700px]"
+            className="max-w-[700px] text-green-gradient"
           >
             <span className="no-gradient">Web 3 (on-chain) and web 2 (off- chain) analyzed our </span>
              Al technology
@@ -244,7 +244,7 @@ export default function Home() {
         <div className="container">
           <Typography
             variant="h2"
-            className="max-w-[790px]"
+            className="max-w-[790px] "
           >
             Media
           </Typography>
@@ -284,7 +284,7 @@ export default function Home() {
         <div className="container">
           <Typography
             variant="h2"
-            className="max-w-[420px]"
+            className="max-w-[420px] text-green-gradient"
           >
             <span className="no-gradient"> Get bot score for your user via</span> our API 
           </Typography>
@@ -399,7 +399,7 @@ export default function Home() {
         <Box className="container text-center">
           <Typography
             variant="h2"
-            className="lg:pt-[160px] pt-10"
+            className="max-w-[580px] lg:pt-[160px] pt-10 text-white"
           >
             Equip yourself with Crediblocks and grow your community
           </Typography>
