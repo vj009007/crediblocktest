@@ -345,17 +345,17 @@ export default function Home() {
                   <Box className="flex items-center gap-6">
                     <Image src={testimonial_avatar} alt="Picture" />
                     <Box>
-                      <Typography className="text-base text-white font-semibold">
+                      <Typography className="title">
                         Maya Bezerra
                       </Typography>
-                      <Typography className="text-sm text-white text-opacity-70 pt-2">
+                      <Typography className="post">
                         CEO / Co-founder
                       </Typography>
                     </Box>
                   </Box>
                   <Image src={discover} alt="Discover" />
                 </Box>
-                <Typography className="text-white md:text-base md:leading-7 text-sm text-opacity-70 pt-8">
+                <Typography className="slider-text">
                   The business plan meaningfully slows down the empirical method
                   of market research. The method of market research
                   simultaneously reverses the role life cycle of products.
@@ -370,17 +370,17 @@ export default function Home() {
                   <Box className="flex items-center gap-6">
                     <Image src={testimonial_avatar} alt="Picture" />
                     <Box>
-                      <Typography className="text-base text-white font-semibold">
+                      <Typography className="title">
                         Maya Bezerra
                       </Typography>
-                      <Typography className="text-sm text-white text-opacity-70 pt-2">
+                      <Typography className="post">
                         CEO / Co-founder
                       </Typography>
                     </Box>
                   </Box>
                   <Image src={discover} alt="Discover" />
                 </Box>
-                <Typography className="text-white md:text-base md:leading-7 text-sm text-opacity-70 pt-8">
+                <Typography className="slider-text">
                   The business plan meaningfully slows down the empirical method
                   of market research. The method of market research
                   simultaneously reverses the role life cycle of products.

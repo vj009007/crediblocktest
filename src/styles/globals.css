@@ -283,6 +283,15 @@
   .community a{
     @apply  mt-[52px] mx-auto !important;
   }
+  .testimonial-slider .wrapper p.slider-text{
+    @apply text-white md:text-base md:leading-7 text-sm text-opacity-70 pt-8 !important;
+  }
+  .testimonial-slider .wrapper .title{
+    @apply text-base text-white font-semibold !important;
+  }
+  .testimonial-slider .wrapper .post{
+    @apply text-sm text-white text-opacity-70 pt-2 !important;
+  }
   @media (min-width: 1024px) {
     .tech-section ul div {
       @apply text-ellipsis whitespace-nowrap overflow-hidden w-[380px];
