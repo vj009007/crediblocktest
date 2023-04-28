@@ -1,19 +1,17 @@
-@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap);
-@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap);
 @import url(https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css);
 @import url(https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css);
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap);
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
-  font-family: "Druk Wide";
-  src: url(../fonts/Druk-Wide-Bold.ttf);
-}
+
+@layer components {
+
 a {
   @apply no-underline;
 }
-@layer components {
   html{
     -webkit-font-smoothing: antialiased;
   }
@@ -37,16 +35,17 @@ a {
   .container {
     @apply mx-auto px-4;
   }
-  *,
   body {
     font-family: "Poppins", sans-serif !important;
+    @apply bg-black;
   }
+
   header nav {
     transition: all 0.3s ease;
     @apply relative z-[3];
   }
   header nav ul li a {
-    @apply text-sm font-medium leading-6 no-underline text-white !important;
+    @apply font-medium leading-6 no-underline text-white !important;
   }
   header nav ul li:hover a {
     @apply text-green-gradient font-medium;
@@ -79,25 +78,30 @@ a {
     font-family: "Poppins", sans-serif !important;
   }
   .text-green-gradient {
-    background: linear-gradient(97.43deg, #72d42c -6.54%, #57c43f 142.22%);
+    background: linear-gradient(97.43deg, #BAFF00 -6.54%, #149C6B 142.22%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
     text-fill-color: transparent;
   }
-  .text-green-gradient2 {
-    background: linear-gradient(97.43deg, #9ded10 -6.54%, #75d62a 142.22%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    text-fill-color: transparent;
+  .no-gradient{
+    background: none;
+    -webkit-background-clip: unset;
+    -webkit-text-fill-color: #fff;
+    background-clip: unset;
+    text-fill-color: #fff;
   }
+  h1,p,span,
+  h2 {
+    font-family: 'Poppins' !important;
+}
+
   ul[aria-labelledby="language"] li:hover {
     font-family: "Poppins", sans-serif !important;
     @apply text-green-gradient font-medium;
   }
   .web3 {
-    font-family: "Druk Wide" !important;
+    font-family: inherit !important;
     @apply lg:text-[140px] lg:leading-[120px] md:text-[120px] text-[86px] leading-none text-white text-opacity-[.06] font-medium mt-4;
   }
   .btn-style-2 {
@@ -152,7 +156,7 @@ a {
   .testimonial-slider .slick-arrow {
     box-shadow: 0px 2px 0px #3d8f17, 0px 4px 4px rgba(0, 0, 0, 0.11),
       0px 12px 20px rgba(61, 143, 23, 0.32);
-    @apply rounded-xl w-[48px] h-[48px] z-20;
+    @apply rounded-xl w-[48px] h-[48px] z-20 mt-[14px];
     background-image: linear-gradient(
       to right,
       #baff00 0%,
@@ -176,14 +180,13 @@ a {
     @apply text-transparent !important;
   }
   .testimonial-slider .slick-next:before {
-    background: url(../../public/arrow-right.svg) no-repeat center center;
+    background: url(/arrow-right.svg) no-repeat center center;
   }
   .testimonial-slider .slick-prev:before {
-    background: url(../../public/arrow-left.svg) no-repeat center center;
+    background: url(/arrow-left.svg) no-repeat center center;
   }
   .community {
-    background: #000 url(../../public/community-bg.png) no-repeat center center;
-    background-size: contain;
+    background: #000 url(/community-bg.png) no-repeat top center;
   }
 
   @media (max-width: 767px) {
@@ -193,7 +196,7 @@ a {
   }
   .footer-border {
     border-image-slice: 1;
-    border-top: 2px solid transparent;
+    border-top: 1px solid transparent;
     border-image: linear-gradient(90deg, #fff, #00000000) 1;
   }
   .header-icons,
@@ -237,7 +240,7 @@ a {
     @apply hidden;
   }
   .country-dropdown svg {
-    background: url(../../public/arrow-down.svg) no-repeat center center;
+    background: url(/arrow-down.svg) no-repeat center center;
   }
   header:has(.toggleMenu) nav.nav {
     @apply block absolute md:w-[50%] w-[90%] gradientBg left-[5%]  top-full p-5 rounded-2xl;
@@ -284,7 +287,7 @@ a {
   }
   @media (min-width: 768px) {
     .technology-header {
-      background: url(../../public/tech-line.svg) no-repeat center center;
+      background: url(/tech-line.svg) no-repeat center center;
     }
   }
   @media (max-width: 768px) {

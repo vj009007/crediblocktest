@@ -1,3 +1,4 @@
+import Head from 'next/head';
 import Image from "next/image";
 import logo from "../../public/logo.svg";
 import Pict from "../../public/pict.png";
@@ -9,7 +10,7 @@ import sliderLogo1 from "../../public/logo-1.svg";
 import sliderLogo2 from "../../public/logo-2.svg";
 import sliderLogo3 from "../../public/logo-3.svg";
 import sliderLogo4 from "../../public/logo-4.svg";
-import testi from "../../public/testimonial.svg";
+import testimonial_avatar from "../../public/testimonial.svg";
 import discover from "../../public/discover.svg";
 import gem1 from "../../public/gem.svg";
 import gem2 from "../../public/gem-1.svg";
@@ -19,6 +20,8 @@ import discord from "../../public/Discord_black.svg";
 import rss from "../../public/RSS_black.svg";
 import roobinium from "../../public/roobinium.svg";
 import React, { useState } from "react";
+import localFont from '@next/font/local';
+import { Poppins } from '@next/font/google';
 import {
   SelectChangeEvent,
   FormControl,
@@ -32,7 +35,21 @@ import {
 } from "@mui/material";
 import Slider from "react-slick";
 
+
+const myFont = localFont({
+  src: '../fonts/Druk-Wide-Bold.ttf',
+  variable: '--myFont',
+})
+const poppins = Poppins({
+  weight: ['400', '700' , '500' , '600', '800'],
+  style: ['normal'],
+  subsets: ['latin'],
+  variable: '--poppins',
+})
+
 export default function Home() {
+  
+
   const [isActive, setIsActive] = useState(false);
   const handleClick = (event: any) => {
     // 👇️ toggle isActive state on click
@@ -84,7 +101,10 @@ export default function Home() {
   };
 
   return (
-    <main className="">
+    <main className={poppins.className}>
+      <Head>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       <header className="bg-black py-[14px] relative">
         <button className={isActive ? "toggleMenu" : ""}></button>
         <Box className="container mx-auto">
@@ -161,17 +181,17 @@ export default function Home() {
             <Box className="lg:max-w-[440px] w-full lg:text-left text-center lg:pt-20">
               <Typography
                 variant="h1"
-                className="lg:text-[68px] text-[48px] leading-none font-bold text-white"
+                className={`lg:text-[68px] text-[48px] leading-none font-bold text-white ${poppins.className}`}
               >
                 AI-powered detection of unwanted bots in web3
               </Typography>
-              <Typography className="text-sm leading-6 font-normal lg:pt-10 pt-6 text-white text-opacity-60">
+              <Typography className="text-md leading-6 font-normal lg:pt-10 pt-6 text-white text-opacity-60">
                 A trustworthy investment offer
               </Typography>
               <Link href="#" className="btn-style lg:mt-11 mt-8">
                 Book a demo
               </Link>
-              <Typography className="web3">web3</Typography>
+                <Typography className={`web3 ${myFont}`}>web3</Typography>
             </Box>
             <Box className="w-full">
               <Image
@@ -188,10 +208,10 @@ export default function Home() {
         <div className="container">
           <Typography
             variant="h2"
-            className="text-center max-w-[700px] mx-auto md:text-[40px] text-3xl leading-snug text-white tracking-[-0.04em] font-bold"
+            className="text-center max-w-[700px] mx-auto md:text-[40px] text-3xl md:leading-[48px] text-white tracking-[-0.04em] font-bold text-green-gradient"
           >
-            Web 3 (on-chain) and web 2 (off- chain) analyzed our 
-            <span className="text-green-gradient"> Al technology</span>
+            <span className="no-gradient">Web 3 (on-chain) and web 2 (off- chain) analyzed our </span>
+             Al technology
           </Typography>
           <Box className="rounded-3xl gradeint-border md:p-8 p-4 add-glow mt-[52px]">
             <Box className="technology-header lg:max-w-[936px] w-full flex items-center justify-between mb-8">
@@ -277,10 +297,9 @@ export default function Home() {
         <div className="container">
           <Typography
             variant="h2"
-            className="text-center max-w-[420px] mx-auto md:text-[40px] text-3xl leading-none text-white tracking-[-0.04em] font-bold"
+            className="text-center max-w-[420px] mx-auto md:text-[40px] text-3xl md:leading-[48px] text-white tracking-[-0.04em] font-bold text-green-gradient"
           >
-            Get bot score for your user via
-            <span className="text-green-gradient"> our API </span>
+            <span className="no-gradient"> Get bot score for your user via</span> our API 
           </Typography>
           <Typography className="text-base leading-6 font-normal text-white text-opacity-70 text-center mt-6">
             The complete web3 security service
@@ -290,7 +309,7 @@ export default function Home() {
               <Image
                 src={gem1}
                 alt="Gem"
-                className="block mx-auto w-100 max-w-[278px]"
+                className="block mx-auto w-100 w-[341px] -translate-x-[10%]"
               />
               <Typography
                 variant="h5"
@@ -298,7 +317,7 @@ export default function Home() {
               >
                 Community security system
               </Typography>
-              <Typography className="mt-5 md:text-base text-sm text-white md:max-w-[380px] mx-auto font-normal text-opacity-70">
+              <Typography className="mt-5 md:text-base text-sm text-white md:max-w-[375px] mx-auto font-normal text-opacity-70 text-center">
                 Our bot provides a firewall for discord and telegram communities
                 to grow safely
               </Typography>
@@ -307,7 +326,7 @@ export default function Home() {
               <Image
                 src={gem2}
                 alt="Gem"
-                className="block mx-auto w-100 max-w-[278px]"
+                className="block mx-auto w-100 max-w-[341px] -translate-x-[10%]"
               />
               <Typography
                 variant="h5"
@@ -315,7 +334,7 @@ export default function Home() {
               >
                 Project certification & insurance
               </Typography>
-              <Typography className="mt-5 md:text-base text-sm text-white md:max-w-[380px] mx-auto font-normal text-opacity-70">
+              <Typography className="mt-5 md:text-base text-sm text-white md:max-w-[375px] mx-auto font-normal text-opacity-70 text-center">
                 Build trust for your project with web3 security assurances that
                 lead to more sales and users
               </Typography>
@@ -328,17 +347,16 @@ export default function Home() {
         <Box className="container max-w-[832px]">
           <Typography
             variant="h2"
-            className="text-center  mx-auto md:text-[40px] text-3xl leading-none text-white tracking-[-0.04em] font-bold"
+            className="text-center  mx-auto md:text-[40px] text-3xl md:leading-[48px] text-white tracking-[-0.04em] font-bold"
           >
-            Our <span className="text-green-gradient2"> costumers </span> and{" "}
-            <span className="text-green-gradient"> partners </span>
+            Our <span className="text-green-gradient"> costumers <span className="no-gradient">and</span> partners </span>
           </Typography>
           <div className="wrapper">
             <Slider {...testimonial} className="lg:w-full w-[90%] mx-auto">
               <Box className="mt-8 rounded-3xl gradeint-border lg:p-12 p-6">
                 <Box className="flex items-center justify-between flex-wrap gap-5">
                   <Box className="flex items-center gap-6">
-                    <Image src={testi} alt="Picture" />
+                    <Image src={testimonial_avatar} alt="Picture" />
                     <Box>
                       <Typography className="text-base text-white font-semibold">
                         Maya Bezerra
@@ -350,7 +368,7 @@ export default function Home() {
                   </Box>
                   <Image src={discover} alt="Discover" />
                 </Box>
-                <Typography className="text-white md:text-base md:leading-8 text-sm text-opacity-70 mt-8">
+                <Typography className="text-white md:text-base md:leading-7 text-sm text-opacity-70 mt-8">
                   The business plan meaningfully slows down the empirical method
                   of market research. The method of market research
                   simultaneously reverses the role life cycle of products.
@@ -363,7 +381,7 @@ export default function Home() {
               <Box className="mt-8 rounded-3xl gradeint-border lg:p-12 p-6">
                 <Box className="flex items-center justify-between flex-wrap gap-5">
                   <Box className="flex items-center gap-6">
-                    <Image src={testi} alt="Picture" />
+                    <Image src={testimonial_avatar} alt="Picture" />
                     <Box>
                       <Typography className="text-base text-white font-semibold">
                         Maya Bezerra
@@ -375,7 +393,7 @@ export default function Home() {
                   </Box>
                   <Image src={discover} alt="Discover" />
                 </Box>
-                <Typography className="text-white md:text-base md:leading-8 text-sm text-opacity-70 mt-8">
+                <Typography className="text-white md:text-base md:leading-7 text-sm text-opacity-70 mt-8">
                   The business plan meaningfully slows down the empirical method
                   of market research. The method of market research
                   simultaneously reverses the role life cycle of products.
@@ -394,7 +412,7 @@ export default function Home() {
         <Box className="container text-center">
           <Typography
             variant="h2"
-            className="text-center max-w-[580px] mx-auto lg:text-[40px] md:text-[40px] text-3xl md:leading-snug leading-none text-white tracking-[-0.04em] font-bold lg:pt-[160px] pt-10"
+            className="text-center max-w-[580px] mx-auto lg:text-[40px] md:text-[40px] text-3xl md:leading-snug md:leading-[48px] text-white tracking-[-0.04em] font-bold lg:pt-[160px] pt-10"
           >
             Equip yourself with Crediblocks and grow your community
           </Typography>
