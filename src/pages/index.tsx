@@ -348,14 +348,14 @@ export default function Home() {
                       <Typography className="text-base text-white font-semibold">
                         Maya Bezerra
                       </Typography>
-                      <Typography className="text-sm text-white text-opacity-70 mt-2">
+                      <Typography className="text-sm text-white text-opacity-70 pt-2">
                         CEO / Co-founder
                       </Typography>
                     </Box>
                   </Box>
                   <Image src={discover} alt="Discover" />
                 </Box>
-                <Typography className="text-white md:text-base md:leading-7 text-sm text-opacity-70 mt-8">
+                <Typography className="text-white md:text-base md:leading-7 text-sm text-opacity-70 pt-8">
                   The business plan meaningfully slows down the empirical method
                   of market research. The method of market research
                   simultaneously reverses the role life cycle of products.
@@ -373,14 +373,14 @@ export default function Home() {
                       <Typography className="text-base text-white font-semibold">
                         Maya Bezerra
                       </Typography>
-                      <Typography className="text-sm text-white text-opacity-70 mt-2">
+                      <Typography className="text-sm text-white text-opacity-70 pt-2">
                         CEO / Co-founder
                       </Typography>
                     </Box>
                   </Box>
                   <Image src={discover} alt="Discover" />
                 </Box>
-                <Typography className="text-white md:text-base md:leading-7 text-sm text-opacity-70 mt-8">
+                <Typography className="text-white md:text-base md:leading-7 text-sm text-opacity-70 pt-8">
                   The business plan meaningfully slows down the empirical method
                   of market research. The method of market research
                   simultaneously reverses the role life cycle of products.
@@ -404,13 +404,13 @@ export default function Home() {
             Equip yourself with Crediblocks and grow your community
           </Typography>
 
-          <Link href="#" className="btn-style mt-[52px] mx-auto">
+          <Link href="#" className="btn-style">
             Book a demo
           </Link>
         </Box>
       </section>
 
-      <footer className="bg-black ">
+      <footer className="bg-black">
         <Box className="container">
           <Box className="footer-border py-8">
             <Box className="flex items-center justify-between gap-5 flex-wrap">

@@ -280,6 +280,9 @@
     filter: blur(267px);
     @apply absolute left-0 right-0 bottom-[130px] z-[-1] bg-white h-[174px] rounded-full;
   }
+  .community a{
+    @apply  mt-[52px] mx-auto !important;
+  }
   @media (min-width: 1024px) {
     .tech-section ul div {
       @apply text-ellipsis whitespace-nowrap overflow-hidden w-[380px];
