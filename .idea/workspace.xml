@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="975c6eea-983f-4af4-b2a3-112ad2515155" name="Changes" comment="testi">
-      <change beforePath="$PROJECT_DIR$/src/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.tsx" afterDir="false" />
+    <list default="true" id="975c6eea-983f-4af4-b2a3-112ad2515155" name="Changes" comment="entire">
       <change beforePath="$PROJECT_DIR$/src/styles/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/globals.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -145,7 +144,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682701256648</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="entire">
+      <created>1682701959400</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1682701959400</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -169,6 +175,7 @@
     <MESSAGE value="white text" />
     <MESSAGE value="footer" />
     <MESSAGE value="testi" />
-    <option name="LAST_COMMIT_MESSAGE" value="testi" />
+    <MESSAGE value="entire" />
+    <option name="LAST_COMMIT_MESSAGE" value="entire" />
   </component>
 </project>

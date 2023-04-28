@@ -249,11 +249,11 @@
   }
   header:has(.toggleMenu) .hamburger > span:nth-child(1) {
     transform: rotate(225deg) translate(0, -4px);
-    background: #ffffff93;
+    background: #ffffff93 !important;
   }
   header:has(.toggleMenu) .hamburger > span:nth-child(3) {
     transform: rotate(-45deg) translate(0, -4px);
-    background: #ffffff85;
+    background: #ffffff85 !important;
   }
   .country-dropdown svg path {
     @apply hidden;
@@ -354,7 +354,7 @@
       @apply text-sm !important;
     }
     .wrapper-logo .slick-slider .slick-slide {
-      @apply m-0;
+      @apply m-0 !important;
     }
   }
 }
