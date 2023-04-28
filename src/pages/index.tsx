@@ -418,13 +418,13 @@ export default function Home() {
               <Box className="flex items-center gap-12 md:w-[40%]">
                 <Link
                   href="#"
-                  className="text-sm leading-6 font-medium text-white opacity-70 no-underline"
+                  className="footer-link no-underline opacity-70"
                 >
                   Privacy Policy
                 </Link>
                 <Link
                   href="#"
-                  className="text-sm leading-6 font-medium text-white opacity-70 no-underline"
+                  className="footer-link no-underline opacity-70"
                 >
                   Terms of Use
                 </Link>
@@ -440,11 +440,11 @@ export default function Home() {
                   <Image src={rss} alt="rss" />
                 </Link>
               </Box>
-              <Typography className="text-sm leading-6 font-medium text-white opacity-70 lg:w-[40%]">
+              <Typography className="footer-link lg:w-[40%] opacity-70">
                 © 2023 Crediblocks
               </Typography>
               <Box className="flex items-center gap-2">
-                <Typography className="text-sm leading-6 font-normal text-[#FDFDFD]">
+                <Typography className="footer-link text-[#FDFDFD]">
                   Made by roobinium.io
                 </Typography>
                 <Image src={roobinium} alt="roobinium" />

@@ -272,7 +272,9 @@
   .add-glow {
     @apply bg-black relative z-[1];
   }
-
+  .footer-link {
+    @apply text-sm leading-6 font-medium text-white !important;
+  }
   .add-glow:after {
     content: "";
     filter: blur(267px);
