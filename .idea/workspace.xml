@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="975c6eea-983f-4af4-b2a3-112ad2515155" name="Changes" comment="font-issue">
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-    </list>
+    <list default="true" id="975c6eea-983f-4af4-b2a3-112ad2515155" name="Changes" comment="removed enotion" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -54,7 +51,21 @@
       <option name="project" value="LOCAL" />
       <updated>1682693696454</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="removed enotion">
+      <created>1682694453157</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1682694453157</updated>
+    </task>
+    <task id="LOCAL-00004" summary="removed enotion">
+      <created>1682694476375</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1682694476375</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -71,6 +82,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="test" />
     <MESSAGE value="font-issue" />
-    <option name="LAST_COMMIT_MESSAGE" value="font-issue" />
+    <MESSAGE value="removed enotion" />
+    <option name="LAST_COMMIT_MESSAGE" value="removed enotion" />
   </component>
 </project>
