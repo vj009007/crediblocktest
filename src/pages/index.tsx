@@ -167,9 +167,7 @@ export default function Home() {
           <Box className="flex items-center lg:flex-nowrap flex-wrap">
             <Box className="lg:max-w-[440px] w-full lg:text-left text-center lg:pt-20">
               <Typography
-                variant="h1"
-                className="lg:text-[68px] text-[48px] leading-none font-bold text-white"
-              >
+                variant="h1">
                 AI-powered detection of unwanted bots in web3
               </Typography>
               <Typography className="text-md leading-6 font-normal lg:pt-10 pt-6 text-white text-opacity-60">

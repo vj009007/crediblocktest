@@ -48,7 +48,7 @@ a {
     @apply font-medium leading-6 no-underline text-white !important;
   }
   header nav ul li:hover a {
-    @apply text-green-gradient font-medium;
+    @apply text-green-gradient font-medium !important;
   }
 
   header .country-dropdown div {
@@ -67,7 +67,7 @@ a {
     @apply bg-transparent;
   }
   ul[aria-labelledby="language"] {
-    @apply py-0 px-0 rounded-xl text-base font-medium text-white relative gradientBg;
+    @apply py-0 px-0 rounded-xl text-base font-medium text-white relative gradientBg !important;
   }
   ul[aria-labelledby="language"]:before {
     content: "";
@@ -115,6 +115,9 @@ a {
       ),
       #1a1a1c;
     @apply rounded-full px-5 py-3 tracking-[-0.04em] text-center no-underline  text-white text-xl leading-8 font-semibold;
+  }
+  .banner h1{
+    @apply lg:text-[68px] text-[48px] leading-none font-bold text-white !important;
   }
   .tech-section ul div {
     @apply m-0 text-white opacity-70 tracking-[-0.04em] text-base leading-8 font-medium mb-2;
