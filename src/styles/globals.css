@@ -305,6 +305,10 @@
     .tech-section ul div {
       @apply text-ellipsis whitespace-nowrap overflow-hidden w-[380px];
     }
+    .lg\:hidden {
+        display: none !important;
+    }
+
   }
   @media (min-width: 1200px) {
     .container {
