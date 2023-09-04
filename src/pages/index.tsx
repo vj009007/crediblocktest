@@ -445,9 +445,9 @@ export default function Home() {
               </Typography>
               <Box className="flex items-center gap-2">
                 <Typography className="footer-link text-[#FDFDFD]">
-                  Made by roobinium.io
+                  Made by MD Rizwan
                 </Typography>
-                <Image src={roobinium} alt="roobinium" />
+                
               </Box>
             </Box>
           </Box>
